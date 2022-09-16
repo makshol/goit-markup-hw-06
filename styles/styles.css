@@ -660,3 +660,14 @@ address {
   color: var(--hero-text-color);
   background-color: var(--nav-text-color);
 }
+
+.send-mail {
+  display: flex;
+  }
+
+  .label-footer-mail {
+    width: 358px;
+    height: 50px;
+    display: inline;
+   
+  }
