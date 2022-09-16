@@ -66,6 +66,38 @@
                   <use href="./images/icons.svg#icon-close-btn"></use>
                 </svg>
               </button>
+<!--Form-->
+<form class="register-form" name="register-form" autocomplete="on" novalidate>
+<strong class="register-form-title"> Залиште свої дані, ми вам передзвонимо 
+</strong>
+
+<div class="register-form-group" role="group">
+
+  <label> <span class="label-item">Ім'я</span> 
+    <input  type="text" name="name" required>
+  </label>
+  
+  <label> <span>Телефон</span>
+    <input type="tel" name="tel" required>
+  </label>
+ 
+  <label> <span>Пошта</span>
+    <input type="email" name="email" required>
+  </label>
+  
+  <label> <span>Коментар</span>
+<textarea name="textarea" rows="5" placeholder="Введіть текст"></textarea>
+  </label>
+
+  <label>
+<input type="checkbox" name="checkbox" >
+<span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+  </label>
+</div>
+
+<button type="submit">Відправити</button>
+</form>
+
             </div>
           </div>
         </div>
@@ -505,12 +537,15 @@
       </div>
 
 <div class="send-mail">
-    <form name="signup-form" autocomplete="on" novalidate>
-    <h3 class="footer-title">Підпишіться на розсилку</h3>
-  <label class="label-footer-mail">
-       <input type="email" name="email" placeholder="E-mail" />
+  
+  <form name="signup-form" autocomplete="on" novalidate>
+    
+  <label class="sign-text">Підпишіться на розсилку
+        <input class="label-footer-mail" type="text" name="mail" placeholder="E-mail" />
   </label>
-  <button type="submit">Підписатися</button>
+  <button class="button-signup" type="submit">Підписатися <svg class="telegram-icon" width="24px" height="24px">
+      <use href="./images/icons.svg#telegram"></use></svg>
+  </button>
 </form>
 </div>
 
