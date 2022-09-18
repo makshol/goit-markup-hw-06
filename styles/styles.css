@@ -304,6 +304,13 @@ address {
   position: absolute;
   right: 8px;
   top: 8px;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover {
+  fill: var(--nav-text-color);
 }
 
 /* <!--Form> */
@@ -339,7 +346,7 @@ margin-bottom: 20px;
 }
 
 .register-form-check {
-  background-color: var(--nav-text-color);
+  background-color: transparent;
 }
 
 .icon-checked {
@@ -356,7 +363,7 @@ opacity: 1;
 }
 
 .register-form-checkbox:checked + .register-form-check {
-  background-color:transparent;
+  background-color:var(--nav-text-color);
 }
 
 .icon-unchecked {
@@ -369,6 +376,14 @@ opacity: 1;
 .register-form-checkbox:checked + .register-form-check .icon-unchecked {
   opacity: 0;
   }
+
+  .register-form-link {
+    color: var(--nav-text-color);
+      }
+
+.register-form-desc {
+line-height: 1.71;
+}
 
 .register-form-label {
   font-size: 12px;
