@@ -789,7 +789,7 @@ padding: 16px 12px;
 .footer > .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+  justify-content: space-between;
 }
 
 .footer .social-network-link {
@@ -805,16 +805,16 @@ padding: 16px 12px;
 
 .send-mail {
   display: flex;
-
-  margin-left: 815px;
- align-self:baseline;
- margin-bottom: 500px;}
+    align-items: flex-end;
+  gap: 12px;
+}
 
 .sign-text {
   color: var(--hero-text-color);
   line-height: 1.19;
   font-weight: 700;
-  text-align: center; 
+
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
