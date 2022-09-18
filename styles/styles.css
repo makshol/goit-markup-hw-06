@@ -835,6 +835,7 @@ textarea {
   font-weight: 700;
   margin-bottom: 20px;
   text-transform: uppercase;
+  display: block;
 }
 
 .label-footer-mail {
