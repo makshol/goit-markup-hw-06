@@ -315,20 +315,71 @@ line-height: 1.15x;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-margin-top: 40px;
-margin-right: 39px;
+padding-top: 40px;
+padding-right: 39px;
 margin-bottom: 12px;
-margin-left: 41px;
+padding-left: 41px;
 }
 
 .register-form-group {
-
+margin-bottom: 20px;
 }
 
-
-label {
+.register-form-field {
   display: block;
+  margin-bottom: 10px;
+  position: relative;
 }
+
+.register-form-agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.register-form-label {
+  font-size: 12px;
+  line-height: 1.17;
+   letter-spacing: 0.01em;
+  color: var(--undertitle-text-color);
+  display: block;
+  margin-bottom: 4px;
+  position: absolute;
+  }
+
+.register-form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  padding-right: 42px;
+  outline: transparent;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-icon {
+  position: absolute;
+  
+  left: 55px;
+  bottom: 11px;
+}
+
+.register-form-input:focus {
+  border-color: var(--nav-text-color);
+}
+
+
+
+  .register-form-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+
 
 
 textarea {
