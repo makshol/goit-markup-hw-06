@@ -336,7 +336,32 @@ margin-bottom: 20px;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  gap: 7px;
 }
+
+.icon-checked {
+  opacity: 0;
+  fill: var(--hero-text-color);
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-checked {
+opacity: 1;
+}
+
+.icon-unchecked {
+  opacity: 1;
+  transition: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + .register-form-icons .icon-unchecked {
+  opacity: 0;
+  }
 
 .register-form-label {
   font-size: 12px;
@@ -356,16 +381,23 @@ margin-bottom: 20px;
   padding-left: 42px;
   padding-right: 42px;
   outline: transparent;
-  transition: border-color;
+  transition: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .register-form-icon {
   position: absolute;
-  
-  left: 55px;
+    left: 55px;
   bottom: 11px;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.register-form-input:focus + .register-form-icon {
+  fill: var(--nav-text-color);
 }
 
 .register-form-input:focus {
@@ -377,15 +409,39 @@ margin-bottom: 20px;
   .register-form-btn {
   display: block;
   margin: 0 auto;
+  width: 200px;
+height: 50px;
+background: var(--nav-text-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+border: none;
+color:var(--primary-backgroundcolor);
+font-size: 16px;
+font-weight: 700;
+line-height: 1.88;
+letter-spacing: 0.06em;
+
 }
-
-
-
 
 textarea {
   width: 448px;
   height: 120px;
-  resize: none;
+ 
+}
+
+.register-form-message {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+outline: transparent;
+resize: none;  
+padding: 16px 12px;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-message:focus {
+  border-color: var(--nav-text-color);
 }
 
 
