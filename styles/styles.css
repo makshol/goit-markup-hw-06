@@ -224,7 +224,7 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -314,16 +314,20 @@ address {
   fill: var(--nav-text-color);
 }
 
+.close-btn:focus {
+  fill: var(--nav-text-color);
+}
+
 /* <!--Form> */
 
 .register-form-title {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15x;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   color: var(--title-text-color);
 }
 
@@ -333,7 +337,7 @@ address {
 
 .register-form-field {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
   position: relative;
 }
 
@@ -383,7 +387,8 @@ address {
 
 .register-form-desc {
   line-height: 1.71;
-}
+  color: var(--undertitle-text-color);
+ }
 
 .register-form-label {
   font-size: 12px;
@@ -391,21 +396,26 @@ address {
   letter-spacing: 0.01em;
   color: var(--undertitle-text-color);
   display: block;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px;
   position: absolute;
-  left: 0;
+  left: 0; */
   top: -18px;
+  text-align: start;
+}
+
+.register-form-label:last-child {
+  margin-bottom: 20px;
 }
 
 .register-form-input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
   padding-right: 42px;
   outline: transparent;
-  transition: border;
+  transition-property: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
